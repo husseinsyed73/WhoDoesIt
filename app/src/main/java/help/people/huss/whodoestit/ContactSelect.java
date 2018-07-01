@@ -45,10 +45,7 @@ public class ContactSelect extends MainActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_select);
-    //PLAN GET THE BUTTONS TO WORK FROM THE NEWBOSTON TUTORIAL
-        // THEN FIND THE ALGORITHMN TO UPLOAD THE CONTACTS TO THE ADAPTOR
-        // THEN BUILD THE FUNCTIONS OF THE ON CLICK EVENTS
-        // new string to hold the contacts
+    
 
 
        StoreContacts = new ArrayList<String>();
@@ -99,7 +96,7 @@ public class ContactSelect extends MainActivity{
                         Intent switchback = new Intent(view.getContext(), MainActivity.class);
 
                         // converting the string to a number
-                        // STILL MISTAKE FIGURE HOW TO CONVERT TO INTEGER CORRECLY
+                       
 
                         // testing to see what button it came from for names
                         // getting the contact
@@ -113,13 +110,12 @@ public class ContactSelect extends MainActivity{
                         String seventh_contact = getIntent().getStringExtra("SeventhContact");
                         String eighth_contact = getIntent().getStringExtra("EighthContact");
                         // if you got a low A or even a B STOP PROGRAMMING
-                        // BIG YOU ALSO KNOW IF ANY CONTACT CHANGES THEN THE NUMBER SHOULD TOO
+                        
 
 
                         // just collecting the user saved tasked
                         String task =  getIntent().getStringExtra("Task");
 
-                        // SETTING ONE DUMB ASS IF STATEMENT BECAUSE YOU PROLLY DID BAD ON YOU TEST
                         if (first_Contact != Contact_name && value == 1) {
                             switchback.putExtra("FirstContactName", Contact_name);
                             Incoming_numbers[value-1] = user_selected_phonenumber;
@@ -197,7 +193,7 @@ public class ContactSelect extends MainActivity{
                 ContactSelect.this,
                 Manifest.permission.READ_CONTACTS))
         {
-                // u may need to un comment this if problems with permission
+               
             //Toast.makeText(ContactSelect.this,"CONTACTS permission allows us to Access CONTACTS app", Toast.LENGTH_LONG).show();
 
         } else {
